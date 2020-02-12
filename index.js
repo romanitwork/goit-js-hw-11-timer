@@ -20,6 +20,7 @@ class CountdownTimer {
       );
       this.mins = Math.floor((this.deltaTime % (1000 * 60 * 60)) / (1000 * 60));
       this.secs = Math.floor((this.deltaTime % (1000 * 60)) / 1000);
+
       if (this.deltaTime <= 0) {
         clearInterval(this.timer);
       }
